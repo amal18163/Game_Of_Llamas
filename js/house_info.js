@@ -1,7 +1,7 @@
 /*
 FILENAME: house_info.js
 AUTHOR: Amal Tidjani
-DATE: July 2016
+DATE: September 2016
 */
 
 /*Loads content and stylizes house pages*/

@@ -1,7 +1,7 @@
 /*
 FILENAME: load.js
 AUTHOR: Amal Tidjani
-DATE: July 2016
+DATE: September 2016
 */
 
 /*Load header HTML onto all pages*/
