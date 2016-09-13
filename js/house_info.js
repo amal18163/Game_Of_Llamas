@@ -1,3 +1,11 @@
+/*
+FILENAME: house_info.js
+AUTHOR: Amal Tidjani
+DATE: July 2016
+*/
+
+/*Loads content and stylizes house pages*/
+
 var bkgnd_url = "images/always-grey.png";
 
 var llark = {
