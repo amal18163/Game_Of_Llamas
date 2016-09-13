@@ -1,0 +1,259 @@
+<ul id = "all_sigils">
+  <!--Container for the 3 sigil buttons-->
+
+      <!-- _______________________ "House Llamark" Sigil Button ______________________-->
+
+      <li class = "sigil_button">
+          <div class = "button_circle llamark">
+              <a href = "house_llamark.html" class = "circle">House <br>Llamark</a>
+          </div> <!--End button_circle-->
+      </li> <!--End sigil_button-->
+
+      <li class = "sigil_button">
+          <div class = "button_circle llamister">
+              <a href = "house_llamister.html" class = "circle"> House <br>Llamister</a>
+          </div> <!--End button_circle-->
+      </li> <!--End sigil_button-->
+
+      <li class = "sigil_button">
+          <div class = "button_circle llargaryen">
+              <a href = "house_llargaryen.html" class = "circle">House <br>Llargaryen</a>
+          </div> <!--End button_circle-->
+      </li> <!--End sigil_button-->
+
+ </ul> <!--End all_sigils -->
+
+
+
+<img src = "images/opening_title.png" alt = "Game of Llamas Logo">
+<div id = "all_sigils">
+    <button class = "sigil_button" id = "llamark_button">House <br> Llamark </button>
+
+    <button class = "sigil_button" id = "llamister_button"> House<br>Llamister</button>
+
+    <button class = "sigil_button" id = "llargaryen_button">House<br>Llargaryen</button>
+</div>
+
+<ul id = "all_sigils">
+<!--Container for the 3 sigil buttons-->
+
+    <!-- _______________________ "House Llamark" Sigil Button ______________________-->
+
+    <li class = "sigil_button">
+        <a href = "house_llamark.html" class = "learn_more llamark">House <br>Llamark <!--No Hover-->
+            <!--When hovered on, button spins and span element containing a call to action appears-->
+            <span class = "learn_more">Learn more about llamas of House Llamark!</span>
+        </a>
+    </li> <!--End sigil_button-->
+
+    <li class = "sigil_button">
+        <a href = "house_llamister.html" class = "learn_more llamister">House <br>Llamister <!--No Hover-->
+            <!--When hovered on, button spins and span element containing a call to action appears-->
+            <span class = "learn_more">Learn more about llamas of House Llamister!</span>
+        </a>
+    </li> <!--End sigil_button-->
+
+    <li class = "sigil_button">
+        <a href = "house_llargaryen.html" class = "learn_more llargaryen">House <br>Llargaryen<!--No Hover-->
+            <!--When hovered on, button spins and span element containing a call to action appears-->
+            <span class = "learn_more">Learn more about llamas of House Llargaryen!</span>
+        </a>
+    </li> <!--End sigil_button-->
+
+</ul> <!--End all_sigils -->
+
+<ul class = "drop_menu">
+    <li><a href = "house_llamark.html">House Llamark</a></li>
+    <li><a href = "house_llamister.html">House Llamister</a></li>
+    <li><a href = "house_llargaryen.html">House Llargaryen</a></li>
+</ul> End drop_down
+</li>
+
+ul.nav_menu {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  background-color: peachpuff;
+}
+
+ul.nav_menu li {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+
+/*Styling for All Menu Links*/
+ul.nav_menu li a {
+  width: 100%;
+  padding: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/*Hover Styling for All Menu Links*/
+ul.nav_menu li a:hover {
+  background-color: lightblue;
+}
+
+/*Hide Menu Icon (Only Display on Mobile Devices)*/
+ul.nav_menu li.icon {
+  display: none;
+  text-align: right;
+}
+
+/*@media screen and (max-width:480px) {*/
+
+
+  /* ________ Before Menu Icon Clicked _______ */
+
+  ul.nav_menu li:not(:first-child) {
+  /*Displays only first tab ("Home")*/
+    width: 100%;
+    display: none;
+  }
+
+  ul.nav_menu li:first-child {
+    width: 82%;
+  }
+
+  ul.nav_menu li.icon {
+  /*Show menu icon*/
+    width: 18%;
+    float: right;
+    display: inline-block;
+  }
+//}
+
+/*@media screen and (max-width:480px) {*/
+  /* ________ After Menu Icon Clicked ________ */
+
+  ul.nav_menu.clicked {
+    position: relative;
+  }
+
+  ul.nav_menu.clicked li.icon {
+    position: absolute;
+    text-align: right;
+    top: 0;
+    right: 0;
+  }
+
+  ul.nav_menu.clicked li {
+    float: none;
+    display: inline;
+  }
+
+  ul.nav_menu.clicked li a {
+     display: block;
+     text-align: left;
+  }
+
+//}
+
+
+#carousel {
+/*Format container for slideshow images*/
+clear: both;
+  width: 90%;
+  height: auto;
+  margin: 0 auto; /*Center in main content box*/
+  margin-bottom: 15px; /*Adds space between carousel and text panels*/
+  position: relative; /*Place images relative to container*/
+}
+
+#carousel img {
+/*Images are absolutely placed/layered onto container*/
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

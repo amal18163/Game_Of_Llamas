@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--
+FILENAME: index.html
+AUTHOR: Amal Tidjani
+DATE: September 2016
+-->
+
+    <head>
+        <title> Home - Game of Llamas </title>
+        <meta name = "description" content = "Welcome to Game of Llamas! Enter if you dare, and explore the ever so complex social structure of South America's territorial beast.">
+        <meta name = "author" content = "Amal Tidjani">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8">
+
+        <!--CSS Stylesheet-->
+        <link href = "css/style.css" rel = "stylesheet">
+
+        <!--Google Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Cinzel%7CCaveat+Brush%7CAlegreya+Sans+SC%7CShadows+Into+Light%7CArima+Madurai%7CCandal' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+        <div id = "all_index_content">
+        <header>
+            <nav>
+                <ul class = "nav_menu" id = "nav_menu">
+                    <li><a class = "active" href = "index.html">Home</a></li>
+
+                    <!--Houses Drop-Down Menu-->
+                    <li><a href = "javascript:void(0)" id = "drop">Houses&nbsp; <span id = "arrow">&#x25BC;</span></a>
+                        <ul class = "drop_menu" id = "drop_menu">
+                            <li><a href = "house_llark.html">Llark</a></li>
+                            <li><a href = "house_llamister.html">Llamister</a></li>
+                            <li><a href = "house_llargaryen.html">Llargaryen</a></li>
+                        </ul> <!--End drop_down-->
+                    </li>
+
+                    <li><a href = "about.html">About</a></li>
+
+                    <!--Icon to minimize or expand nav menu on mobile devices-->
+                    <li class = "icon">
+                        <a id = "icon" href = "javascript:void(0);">&#9776;</a>
+                    </li>
+
+                </ul> <!--End nav_menu-->
+            </nav>
+        </header>
+
+
+        <main>
+          <h1>Game &nbsp; of &nbsp;Llamas</h1>
+
+          <p class = "alone_text">
+              Explore the social hierarchy of Llesteros's territorial beast.
+          </p>
+
+          <div id = "all_sigils">
+              <div class = "sigil_button">
+                  <img class = "sigil_blank" src = "images/sigil_generic_llark.png" alt = "House Llark Sigil">
+                  <img class = "sigil_image" src = "images/sigil_llark.png" alt = "House Llark Sigil">
+                  <span>Danger is <br>Coming</span>
+              </div>
+
+              <div class = "sigil_button">
+                  <img class = "sigil_blank" src = "images/sigil_generic_llam.png" alt = "House Llamister Sigil">
+                  <img class = "sigil_image" src = "images/sigil_llamister.png" alt = "House Llamister Sigil">
+                  <span>&nbsp;Hear Me <br>Spit</span>
+              </div>
+
+              <div class = "sigil_button">
+                  <img class = "sigil_blank" src = "images/sigil_generic_llarg.png" alt = "House Llargaryen Sigil">
+                  <img class = "sigil_image" src = "images/sigil_llargaryen.png" alt = "House Llargaryen Sigil">
+                  <span>Spit and <br>Blood</span>
+              </div>
+          </div>
+
+          <div id = "llama_info">
+              <div class = "item" id = "item1">
+                  <div id = "power" class = "item_title_container">
+                      <h2 class = "item_title"> POWER </h2>
+                  </div> <!--End item_title_container-->
+
+                  <p class = "item_text"> Llamas of Llesteros can
+                     be very territorial and will often fight one another to improve their social rank.
+                  </p>
+              </div> <!--End item1-->
+
+              <div class = "item" id = "item2">
+                  <div class = "item_title_container" id = "spit">
+                      <h2 class = "item_title"> SPIT </h2>
+                  </div> <!--End item_title_container-->
+
+                  <p class = "item_text"> Llama battles, which can get very bloody, consist of violent
+                     kicking, biting, and of course, spitting.
+                  </p>
+              </div> <!--End item2-->
+
+              <div class = "item" id = "item3">
+                  <div class = "item_title_container" id = "family">
+                      <h2 class = "item_title"> FAMILY </h2>
+                  </div> <!--End item_title_container-->
+
+                  <p class = "item_text"> Despite their violent quest for power, llamas are
+                     fiercely loyal to their families.
+                  </p>
+              </div> <!--End item3-->
+
+          </div> <!--End llama_info-->
+
+        </main>
+
+        <footer>
+                <hr>
+                <a href="http://validator.w3.org/check?uri=referer">
+                    <img src="http://cs.wellesley.edu/~cs110/Icons/valid-html5v2.png"
+                         alt="Valid HTML 5" title="Valid HTML 5" height="50">
+                </a> <!--HTML Validation Icon-->
+
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="http://cs.wellesley.edu/~cs110/Icons/vcss.gif"
+                         alt="Valid CSS" title="Valid CSS" height="50">
+                </a> <!--CSS Validation Icon-->
+        </footer>
+
+      </div> <!--End all_index_content-->
+
+
+
+       <!--JQUERY-->
+       <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+       <script src = "js/toggle_menu.js"></script>
+       <script src = "js/sigil_click.js"></script>
+
+
+
+    </body>
+
+</html>

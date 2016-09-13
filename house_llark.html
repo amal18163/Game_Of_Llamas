@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--
+FILENAME: house_llark.html
+AUTHOR: Amal Tidjani
+DATE: September 2016
+-->
+
+    <head>
+        <title> House Llark - Game of Llamas </title>
+        <meta name = "description" content = "Welcome to Game of Llamas! Enter if you dare, and explore the ever so complex social structure of South America's territorial beast.">
+        <meta name = "author" content = "Amal Tidjani">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8">
+
+        <!--CSS Stylesheet-->
+        <link href = "css/style.css" rel = "stylesheet">
+
+        <!--Google Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Cinzel%7CCaveat+Brush%7CAlegreya+Sans+SC%7CShadows+Into+Light%7CArima+Madurai%7CCandal' rel='stylesheet' type='text/css'>
+
+    </head>
+
+    <body>
+        <div id = "all_house_content">
+        <header id = "header_here"></header>
+
+        <main>
+            <h1 class = "house_header">House &nbsp; <span id = "house_header"></span></h1>
+
+            <div id = "sigil_facts_wrapper">
+                <img id = "sigil_image" src = "images/sigil_llark.png" alt = "House Llark Sigil">
+
+                <div id = "house_facts">
+                    <p class = "text_container">
+                        Sigil: &nbsp; <span id = "sigil"></span>
+                    </p>
+
+                    <p class = "text_container">
+                        Motto: &nbsp; <span id = "motto"></span>
+                    </p>
+
+                    <p class = "text_container">
+                        Seat: &nbsp; <span id = "seat"></span>
+                    </p>
+
+                    <p class = "text_container">
+                        Lord: &nbsp; <span id = "lord"></span>
+                    </p>
+
+                    <p class = "text_container">
+                        Religion: &nbsp; <span id = "religion"></span>
+                    </p>
+                </div> <!--End house_facts-->
+            </div>
+
+            <div class = "house_description"></div>
+
+        </main>
+
+        <footer id = "footer_here"></footer>
+
+      </div> <!--End all_house_content-->
+
+       <!--JQUERY-->
+
+       <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+       <script src = "js/toggle_menu.js"></script>
+       <script src = "js/house_info.js"></script>
+       <script src = "js/load.js"></script>
+
+
+
+    </body>
+</html>

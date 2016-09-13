@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--
+FILENAME: about.html
+AUTHOR: Amal Tidjani
+DATE: September 2016
+-->
+
+    <head>
+        <title> About - Game of Llamas </title>
+        <meta name = "description" content = "Learn more about the technical decisions behind this site's design!">
+        <meta name = "author" content = "Amal Tidjani">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8">
+
+        <!--CSS Stylesheet-->
+        <link href = "css/style.css" rel = "stylesheet">
+
+        <!--Google Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Cinzel%7CAlegreya+Sans+SC' rel='stylesheet' type='text/css'>
+        <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class = "all_content">
+        <header id = "header_here"></header>
+
+        <main>
+            <h1> About This Site </h1>
+
+            <div id = "my_info">
+                <section class = "format" id = "about_me">
+                    <h2> Site Developer: </h2>
+                    <img src = "images/me.png" alt = "Amal Tidjani">
+                    <p>
+                        AMAL TIDJANI OF
+                        <br>HOUSE ZAPPOS
+                        <br>FIRST OF HER NAME
+                        <br>DEVOURER OF CHOCOLATE
+                        <br>BREAKER OF CODE
+                        <br>MOTHER OF HAMSTERS
+                    </p>
+                </section>
+
+                <img class = "hide" src = "images/hamster.png" alt = "Hamster Likes Coding">
+
+                <section class = "format" id = "why_developer">
+                    <h2>Why Front-End?</h2>
+                    <p>
+                      Growing up, I've always been fascinating with building websites.
+                      Of course, back then, middle-school me equated moving some shapes
+                      around on wix.com to be <q>web-development</q>. While I enjoyed
+                      spending hours on end fiddling with wix.com, I couldn't help but
+                      feel like a bit of a <q>web-developing</q> imposter because I
+                      wasn't actually building my sites from scratch. Resigning myself
+                      to the idea of always being an <q>imposter</q>, it wasn't until
+                      my freshman year of college when I took my first programming
+                      language that my desire to work in font-end development was
+                      suddenly an attainable goal.
+                    </p>
+                </section>
+
+            </div> <!--End my_info-->
+
+
+            <section class = "format" id = "technical">
+                <h2> TECHNICAL DECISIONS </h2>
+
+                <h3> ORGANIZATIONAL SCHEME </h3>
+                <p>
+                    My site consists of 5 HTML pages (index.html, house_llark.html, house_llamister.html, house_llargaryen.html, and about.html),
+                    1 external CSS stylesheet (style.css) and 4 JavaScript files (toggle_menu.js, house_info.js, sigil_click.js, and load.js).
+                </p>
+
+
+                <h3> MODULARITY: </h3>
+                <p>
+                    Before vigorously coding away, it was important that I first sketched out my designs on paper so that I could identify any elements,
+                    functions, or sections of code that could be reused throughout my site.  Making sites as modular as possible not only eliminates code
+                    redundancy, saves time, and facilitates debugging, but makes code a lot easier to work with when designing for responsiveness.
+                </p>
+                <p>
+                    I relied heavily on JQUERY’s .load() function to load universal HTML elements and JavaScript functions onto my site’s pages. For
+                    example, I loaded the home page’s navigation menu and its corresponding JavaScript toggling functions on to each page of my site.
+                    Because the “llama house” pages are identical in content and design, house_llamister.html and house_targaryen.html load content
+                    entirely from house_llark.html.
+                </p>
+                <p>
+                    Along with JQUERY’s .load(), I made my three “llama house” HTML pages more modular by packaging content and styling rules specific to
+                    each house in JavaScript objects.  I then passed these JavaScript objects as parameters into a generic load function to populate each
+                    of the “llama house” pages with unique content and color schemes.  For more information, see <q>js/house_info.js</q>.
+                </p>
+
+                <h3> RESPONSIVENESS: </h3>
+                <p>
+                    I found that structuring my page layouts for small-screen mobile devices first before building my way up to larger screens streamlined
+                    the responsive design process.  Because this was my first project working with responsiveness, I initially tried a top-down approach,
+                    resizing and deleting elements as I moved down screen widths.  I learned (perhaps the hard way) that many layouts and features,
+                    particularly animations, don’t scale down very well.  Ultimately, creating a small, simple default layout that I could progressively
+                    enhance at different screen widths proved more intuitive and efficient.
+                </p>
+                <p> Another advantage to a mobile first design process is that mobile content loads faster.  Because the mobile layout is the default, the
+                    page doesn’t have to load any of the larger screen sizes’ extraneous content, meaning a faster user experience.
+                </p>
+                <p> I chose not to design my site exclusively around “standard” breakpoints but use them as a contextual guide to inform my design.
+                    Because we live in a time of constantly evolving technology, the “standard” is always changing.  iPhones are getting larger and iPads
+                    are getting smaller.  And that’s just Apple.  For this reason, I relied heavily on Google Chrome’s Device Mode tool to define my own
+                    media query breakpoints.  I reformatted my design at widths where I felt it lost its wow factor.
+                </p>
+
+                <h3> USABILITY: </h3>
+                <p>
+                    User experience is an essential design factor to take into consideration. As someone who enjoys designing interactive sites with hovering
+                    capabilities, it was important for me to scale myself back and not add interactive features at the expense of mobile user experience.
+                    While hovering effects are a great visual indicator of clickable content, on a mobile device, items with hover effects must be clicked
+                    twice to perform an action (once to activate the hover effect and the second to fire an event).  For this reason, I made sure to disable
+                    my site’s hovering effects on screen widths smaller than 1200px (roughly the size of a small laptop screen). I also used automatic and/or
+                    looped animations to visually queue mobile users to clickable content (i.e. the bouncing sigil images on the home page).
+               </p>
+
+            </section> <!--End technical-->
+
+        </main>
+
+        <footer id = "footer_here"></footer>
+
+      </div> <!--End all_content-->
+
+      <!--Scripts-->
+      <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src = "js/toggle_menu.js"></script>
+      <script src = "js/house_info.js"></script>
+      <script src = "js/load.js"></script>
+
+    </body>
+
+</html>
